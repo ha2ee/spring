@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import hello.hellospring.domain.Member;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>(); //실제 서비스에선 동시성 문제가 있을 수 있어서 ConcurrentHashMap을 사용한다.
