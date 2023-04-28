@@ -30,7 +30,7 @@ public class MemberService {
     }
 
     private void validateDuplicateMember(Member member) {
-        memberRepository.findbyName(member.getName())
+        memberRepository.findByName(member.getName())
             .ifPresent(m ->  { //만약 값이 있으면
             throw new IllegalStateException("이미 존재하는 회원 입니다.");
         });
@@ -44,7 +44,7 @@ public class MemberService {
     }
 
     public Optional<Member> findOne(Long memberId) {
-        return memberRepository.findbyId(memberId);
+        return memberRepository.findById(memberId);
     }
 
 }

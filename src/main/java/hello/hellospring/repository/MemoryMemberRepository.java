@@ -21,12 +21,12 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 
     @Override
-    public Optional<Member> findbyId(Long id) {
+    public Optional<Member> findById(Long id) {
         return Optional.ofNullable(store.get(id)); // 널이 반환 될 가능성이 있으면 Optional으로 감싸준다
     }
 
     @Override
-    public Optional<Member> findbyName(String name) {
+    public Optional<Member> findByName(String name) {
         return store.values().stream()
             .filter(member -> member.getName().equals(name)) // member.getName()이 파라미터로 넘어온 String name 이랑 같은지 필터를 함. 같은 경우에만 필터링 된다.
             .findAny(); // 그중에서 찾으면 반환한다.
