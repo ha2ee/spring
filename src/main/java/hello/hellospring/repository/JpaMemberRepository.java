@@ -17,7 +17,6 @@ public class JpaMemberRepository implements MemberRepository{
 
     @Override
     public List<Member> findAll() {
-        // TODO Auto-generated method stub
         return em.createQuery("select m from Member m", Member.class)
                         .getResultList();
         }
