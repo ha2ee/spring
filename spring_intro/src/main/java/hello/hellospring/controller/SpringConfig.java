@@ -1,18 +1,18 @@
 package hello.hellospring.controller;
 
-import javax.persistence.EntityManager;
-import javax.sql.DataSource;
+// import javax.persistence.EntityManager;
+// import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import hello.hellospring.aop.TimeTraceAop;
-import hello.hellospring.repository.JdbcMemberRepository;
-import hello.hellospring.repository.JdbcTemplateMemberRepository;
-import hello.hellospring.repository.JpaMemberRepository;
+// import hello.hellospring.aop.TimeTraceAop;
+// import hello.hellospring.repository.JdbcMemberRepository;
+// import hello.hellospring.repository.JdbcTemplateMemberRepository;
+// import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
+// import hello.hellospring.repository.MemoryMemberRepository;
 import hello.hellospring.service.MemberService;
 
 @Configuration
