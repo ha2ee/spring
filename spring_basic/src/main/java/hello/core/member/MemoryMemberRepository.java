@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component //memoryMemberRepository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>(); //실무에선 동시성 문제로 인해 ConcurrnetHashMap을 사용해야함. 
